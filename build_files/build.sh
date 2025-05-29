@@ -26,7 +26,7 @@ dnf config-manager --set-enabled crb && \
 
 
 # RPMs to remove
-dnf remove toolbox
+dnf -y remove toolbox
 
 
 # Use a COPR Example:
