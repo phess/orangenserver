@@ -12,14 +12,21 @@ set -ouex pipefail
 # this installs a package from fedora repos
 dnf install -y \
   tmux \
-  cockpit
+  cockpit \
+  sysstat
+  
 
 # Add EPEL and install packages from it
 dnf config-manager --set-enabled crb && \
   dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm && \
   dnf config-manager --set-disabled epel && \
   dnf -y install --enablerepo=epel \
-    ripgrep
+    ripgrep \
+    distrobox
+
+
+# RPMs to remove
+dnf remove toolbox
 
 
 # Use a COPR Example:
