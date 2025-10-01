@@ -49,7 +49,7 @@ dnf config-manager --set-enabled crb && \
 # Install tailscale -- includes enabling the repo
 dnf config-manager --add-repo https://pkgs.tailscale.com/stable/centos/10/tailscale.repo && \
   dnf -y install tailscale && \
-  systemctl enable tailscale
+  systemctl enable tailscaled
 
 
 # RPMs to remove
