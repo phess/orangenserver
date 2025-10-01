@@ -14,7 +14,8 @@ COPY build_files /
 # Fedora base image: quay.io/fedora/fedora-bootc:41
 # CentOS base images: quay.io/centos-bootc/centos-bootc:stream10
 #FROM quay.io/centos-bootc/centos-bootc:stream10
-FROM quay.io/fedora/fedora-bootc:42
+#FROM quay.io/fedora/fedora-bootc:42
+FROM quay.io/ublue-os/bluefin-lts:stable
 
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
