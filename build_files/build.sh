@@ -79,3 +79,5 @@ dnf clean all
 
 # systemctl enable podman.socket
 systemctl enable sshd.service
+systemctl enable cockpit.socket
+systemctl enable libvirtd.socket
