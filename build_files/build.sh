@@ -31,7 +31,12 @@ dnf install -y \
   libvirt-daemon-config-network \
   libvirt-daemon-config-nwfilter \
   qemu-kvm \
-  nmap
+  nmap \
+  cockpit-image-builder \
+  cockpit-machines \
+  cockpit-podman \
+  cockpit-storaged
+
 
 
 
