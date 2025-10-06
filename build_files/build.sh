@@ -14,6 +14,7 @@ dnf install -y \
   tmux \
   cockpit \
   sysstat \
+  ansible \
   gnome-disk-utility \
   hplip \
   system-reinstall-bootc \
