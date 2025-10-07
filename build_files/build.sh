@@ -31,6 +31,7 @@ dnf install -y \
   libvirt-daemon-driver-storage \
   libvirt-daemon-config-network \
   libvirt-daemon-config-nwfilter \
+  python3-libvirt \
   qemu-kvm \
   nmap \
   cockpit-image-builder \
