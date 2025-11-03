@@ -37,7 +37,8 @@ dnf install -y \
   cockpit-image-builder \
   cockpit-machines \
   cockpit-podman \
-  cockpit-storaged
+  cockpit-storaged \
+  ramalama
 
 
 
