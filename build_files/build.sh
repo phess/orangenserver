@@ -87,8 +87,4 @@ systemctl enable libvirtd.socket
 systemctl enable systemd-resolved
 
 # symlink /etc/resolv.conf to systemd-resolved's stub resolver file
-#ln -s /run/systemd/resolve/stub-resolv.conf /etc/newresolv.conf
-#mv -v /etc/newresolv.conf /etc/resolv.conf
-#rm /etc/resolv.conf
-mv -v /etc/resolv.conf /etc/oldresolv.conf
-ln -f -s /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+#### NO. CAN'T TOUCH /etc/resolv.conf as it says "Device or resource busy"
