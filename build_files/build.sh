@@ -53,7 +53,6 @@ dnf config-manager --set-enabled crb && \
     duperemove \
     gnome-tweaks
 
-
 # Install tailscale -- includes enabling the repo
 dnf config-manager --add-repo https://pkgs.tailscale.com/stable/centos/10/tailscale.repo && \
   dnf -y install tailscale && \
@@ -61,7 +60,20 @@ dnf config-manager --add-repo https://pkgs.tailscale.com/stable/centos/10/tailsc
 
 
 # RPMs to remove
-dnf -y remove toolbox
+dnf -y remove \
+   toolbox 
+
+
+# Disable avahi-daemon and remove its RPMs!
+systemctl disable \
+  avahi-daemon.service \
+  avahi-daemon.socket
+
+dnf -y remove \
+   avahi-libs \
+   avahi-glib \
+   avahi \
+   avahi-tools
 
 
 # Use a COPR Example:
