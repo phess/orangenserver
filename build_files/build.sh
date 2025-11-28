@@ -69,11 +69,12 @@ systemctl disable \
   avahi-daemon.service \
   avahi-daemon.socket
 
-dnf -y remove \
-   avahi-libs \
-   avahi-glib \
-   avahi \
-   avahi-tools
+## Removing avahi stuff apparently removes qemu-kvm!
+#dnf -y remove \
+#   avahi-libs \
+#   avahi-glib \
+#   avahi \
+#   avahi-tools
 
 
 # Use a COPR Example:
