@@ -51,7 +51,8 @@ dnf config-manager --set-enabled crb && \
     ripgrep \
     distrobox \
     duperemove \
-    gnome-tweaks
+    gnome-tweaks \
+    btop
 
 # Install tailscale -- includes enabling the repo
 dnf config-manager --add-repo https://pkgs.tailscale.com/stable/centos/10/tailscale.repo && \
