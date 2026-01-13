@@ -38,8 +38,7 @@ dnf install -y \
   cockpit-machines \
   cockpit-podman \
   cockpit-storaged \
-  ramalama \
-  gnupg2-scdaemon
+  ramalama
 
 
 
