@@ -15,7 +15,8 @@ COPY build_files /
 # CentOS base images: quay.io/centos-bootc/centos-bootc:stream10
 #FROM quay.io/centos-bootc/centos-bootc:stream10
 #FROM quay.io/fedora/fedora-bootc:42
-FROM ghcr.io/ublue-os/bluefin:lts
+#FROM ghcr.io/ublue-os/bluefin:lts
+FROM ghcr.io/projectbluefin/bluefin-lts:stable
 
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
